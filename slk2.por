@@ -4,18 +4,23 @@ programa
 	
 	funcao inicio()
 	{
-	real litro, kmL, media, arredondamento
-        escreva("indique o gasto de combustivel: \n")
-        leia(litro)
-        inteiro km
-        escreva("indique a distancia percorrida: \n")
-        leia(km)    
+		cadeia nome
+        escreva("informe seu nome: \n")
+        leia(nome)
+        real salario, total, soma, conta, arredondamento
+        escreva("informe seu total de vendas: \n")
+        leia(total)
+        escreva("informe seu salario: \n")
+        leia(salario)
 
  
 
-        media = (km/litro)
-        arredondamento= mat.arredondar(media, 3)
-        escreva("a media sera: ",arredondamento, " km/L")	
+        conta = (total*0.15)
+        soma = (salario+conta)
+        arredondamento = mat.arredondar(soma, 2)
+        escreva("voce recebera ",arredondamento)
+
+
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 253; 
+ * @POSICAO-CURSOR = 120; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
